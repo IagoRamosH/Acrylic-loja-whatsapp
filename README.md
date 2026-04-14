@@ -1,59 +1,23 @@
-# LojaWhatsapp
+# **Loja WhatsApp - Aplicação Web PWA com Angular**
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.2.
+Este projeto foi criado utilizando a versão [Angular CLI](https://github.com/angular/angular-cli) 21.2.2.
 
-## Development server
+**Loja WhatsApp** é uma aplicação web desenvolvida com **Angular**, projetada para ser uma **loja virtual** simples, porém moderna, que integra a experiência de compras com **WhatsApp**. A interface foi desenvolvida com um **design acrílico translúcido e profissional**, proporcionando uma experiência visual única e agradável ao usuário.
 
-To start a local development server, run:
+### **Funcionalidades Principais:**
+- **Visualização de Produtos:** Exibição de produtos com **cards interativos**, permitindo fácil navegação e redirecionamento para o WhatsApp do vendedor, facilitando a comunicação e o pedido.
+- **Autenticação Local Simulada:** Login e cadastro **simulados** com **e-mail** e **senha**, sem dependências externas como Firebase, para testes rápidos e demonstrativos.
+- **Progressive Web App (PWA):** A aplicação foi configurada como um PWA, permitindo que o site funcione como um **aplicativo**, com funcionalidades como **instalação no dispositivo** e **uso offline**.
+
+### **Design Visual:**
+- **Estilo Acrílico Translúcido:** O design utiliza **efeitos de vidro fosco** para criar uma interface moderna e fluida, proporcionando uma experiência de uso agradável e elegante.
+- **Interatividade:** Botões interativos com efeitos de hover e transições suaves, que tornam a navegação intuitiva e agradável para o usuário.
+
+### **Instruções para Desenvolvimento:**
+
+#### **Servidor de Desenvolvimento**
+
+Para iniciar o servidor de desenvolvimento local, execute o comando:
 
 ```bash
 ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
