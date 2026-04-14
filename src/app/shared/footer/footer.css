@@ -1,0 +1,6 @@
+.footer {
+  margin: 16px;
+  padding: 22px;
+  text-align: center;
+  color: var(--text-soft);
+}

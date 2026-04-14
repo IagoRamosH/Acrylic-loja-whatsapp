@@ -1,0 +1,31 @@
+<header class="header glass">
+  <div class="container header-content">
+    <a routerLink="/" class="brand">
+      <span class="brand-badge"></span>
+      <div>
+        <p class="brand-overline">Atendimento via WhatsApp</p>
+        <h1 class="logo">Loja Acrylic</h1>
+      </div>
+    </a>
+
+    <nav class="nav">
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Inicio</a>
+      <a routerLink="/produtos" routerLinkActive="active">Produtos</a>
+      <a routerLink="/login" routerLinkActive="active">Login</a>
+      <a routerLink="/cadastro" routerLinkActive="active">Cadastro</a>
+      <a routerLink="/perfil" routerLinkActive="active">Perfil</a>
+    </nav>
+
+    <div class="account-pill" *ngIf="user$ | async as user; else guestPill">
+      <span class="pill-label">Conectado</span>
+      <strong>{{ user.name }}</strong>
+    </div>
+
+    <ng-template #guestPill>
+      <div class="account-pill muted">
+        <span class="pill-label">Modo local</span>
+        <strong>Conta demo disponivel</strong>
+      </div>
+    </ng-template>
+  </div>
+</header>

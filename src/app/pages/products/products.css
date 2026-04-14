@@ -1,0 +1,22 @@
+.products-header {
+  margin-bottom: 26px;
+  padding: 30px 28px;
+  text-align: left;
+}
+
+.products-header h2 {
+  margin-bottom: 10px;
+  font-size: clamp(2rem, 3vw, 2.7rem);
+}
+
+.products-header p {
+  max-width: 640px;
+  color: var(--text-soft);
+  line-height: 1.65;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 22px;
+}

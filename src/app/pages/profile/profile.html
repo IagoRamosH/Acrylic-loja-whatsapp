@@ -1,0 +1,45 @@
+<section class="container">
+  <div class="profile-card glass">
+    <div class="profile-header">
+      <div>
+        <span class="tag">Perfil</span>
+        <h2>Minha conta</h2>
+        <p>Seus dados estao disponiveis apenas neste navegador, em modo local.</p>
+      </div>
+
+      <button *ngIf="user" type="button" class="auth-btn" (click)="logout()">Sair</button>
+    </div>
+
+    <div class="profile-info" *ngIf="user; else loggedOutState">
+      <div class="info-box">
+        <strong>Nome</strong>
+        <span>{{ user.name }}</span>
+      </div>
+
+      <div class="info-box">
+        <strong>E-mail</strong>
+        <span>{{ user.email }}</span>
+      </div>
+
+      <div class="info-box">
+        <strong>Status</strong>
+        <span>{{ user.status }}</span>
+      </div>
+    </div>
+
+    <ng-template #loggedOutState>
+      <div class="profile-info">
+        <div class="info-box">
+          <strong>Status</strong>
+          <span>Voce ainda nao fez login.</span>
+        </div>
+      </div>
+      <a routerLink="/login" class="auth-btn">Ir para login</a>
+    </ng-template>
+
+    <div class="profile-note" *ngIf="user">
+      <span>Rotas protegidas</span>
+      <p>Se voce sair da conta, o acesso a esta pagina volta a exigir login.</p>
+    </div>
+  </div>
+</section>
